@@ -1,0 +1,21 @@
+{
+  "name": "@defily/DefilySwap",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run compile",
+    "compile": "truffle compile",
+    "precompile": "rm -rf build/",
+    "flatten-contract": "truffle-flattener contracts/contract.sol > ./flatten/contract.sol"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.4.1",
+    "bn.js": "^5.2.1",
+    "dotenv": "^16.0.1",
+    "node-fetch": "^2.6.7",
+    "truffle-flattener": "^1.5.0",
+    "truffle-plugin-verify": "^0.5.28"
+  },
+  "devDependencies": {}
+}
